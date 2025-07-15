@@ -40,9 +40,7 @@
             <div class="hero-content">
                 <div class="hero-text">
                     <h1><span class="highlight">Ze</span> Bleck Bux</h1>
-                    <h2>Black Box Observability System</h2>
-                    <p class="tagline">Capture critical runtime data at key moments for faster troubleshooting and insights</p>
-                    <p class="hero-description">A robust system designed to preserve critical runtime data during incidents, with custom triggers and multiple storage options.</p>
+                    <p class="hero-description">A powerful black box observability system designed to capture, preserve, and analyze critical runtime data during incidents and anomalies. With Ze Bleck Bux, you can troubleshoot faster with complete system snapshots, custom triggers, and flexible storage options.</p>
                     <div class="hero-buttons">
                         <a href="https://github.com/scalebit-com/zebleckbux-website.git" class="hero-button" target="_blank">
                             <i class="fab fa-github"></i> GitHub Repository
@@ -301,7 +299,7 @@
             if (logoLarge) {
                 logoLarge.onerror = function() {
                     this.onerror = null; // Förhindra oändlig loop
-                    this.src = 'https://via.placeholder.com/380x380/ff7b00/ffffff?text=Ze+Bleck+Bux';
+                    this.src = 'https://via.placeholder.com/400x400/ff7b00/ffffff?text=Ze+Bleck+Bux';
                     this.alt = 'Ze Bleck Bux Logo Placeholder';
                     console.log('Stor logo ersatt med platshållare');
                 };
@@ -309,7 +307,7 @@
                 // Utlös onerror manuellt om bilden inte finns vid sidladdning
                 setTimeout(function() {
                     if (logoLarge && (!logoLarge.complete || logoLarge.naturalHeight === 0)) {
-                        logoLarge.src = 'https://via.placeholder.com/380x380/ff7b00/ffffff?text=Ze+Bleck+Bux';
+                        logoLarge.src = 'https://via.placeholder.com/400x400/ff7b00/ffffff?text=Ze+Bleck+Bux';
                     }
                 }, 300);
             }

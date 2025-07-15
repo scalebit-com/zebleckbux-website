@@ -3,11 +3,321 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zebleckbux Website</title>
+    <title>Ze Bleck Bux - Observability System</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Source+Code+Pro&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Välkommen till Zebleckbux!</h1>
-    <p>Det här är en grundläggande HTML-sida.</p>
+    <header id="header">
+        <div class="container">
+            <div class="logo-container">
+                <h1><span class="highlight">Ze</span> Bleck Bux</h1>
+                <div class="logo-accent">
+                    <i class="fas fa-cube"></i>
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+            <div class="hamburger-menu" id="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#features" class="nav-link">Features</a></li>
+                    <li><a href="#github" class="nav-link">GitHub</a></li>
+                    <li><a href="https://github.com/scalebit-com/zebleckbux-website.git" class="github-link" target="_blank">Repository <i class="fab fa-github"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="overlay" id="overlay"></div>
+    </header>
+    
+    <section class="hero">
+        <div class="container">
+            <!-- Logotyp högst upp på sidan -->
+            <div class="top-logo">
+                <img src="logo.png" alt="Ze Bleck Bux Logo" id="logo-large">
+            </div>
+            <h1>Black Box Observability System</h1>
+            <p class="tagline">Capture critical runtime data at key moments</p>
+        </div>
+    </section>
+
+    <main>
+        <section id="about" class="section">
+            <div class="container">
+                <h2>What is Ze Bleck Bux?</h2>
+                <div class="content-block">
+                    <p>
+                        Ze Bleck Bux is a black box-style observability system designed to capture and preserve 
+                        critical runtime data—such as logs, metrics, Kubernetes events, configurations, 
+                        and secrets—at key moments like incidents or anomalies.
+                    </p>
+                    <p>
+                        It supports custom triggers, multiple storage backends, and automatic expiration to manage data efficiently. 
+                        With a pluggable architecture, it's highly extensible and can integrate with 
+                        various data sources or services.
+                    </p>
+                    <p>
+                        The tool aims to streamline troubleshooting by providing a complete snapshot of system state, 
+                        with future plans to incorporate AI-driven insights, visual dashboards, and anomaly detection 
+                        for faster root cause analysis.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="section alt-section">
+            <div class="container">
+                <h2>Key Features</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-save"></i></div>
+                        <h3>Data Capture</h3>
+                        <p>Captures logs, metrics, events, and configurations automatically.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-bolt"></i></div>
+                        <h3>Custom Triggers</h3>
+                        <p>Define custom conditions to initiate data capture.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-database"></i></div>
+                        <h3>Multiple Storage</h3>
+                        <p>Support for various storage backends for flexibility.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-puzzle-piece"></i></div>
+                        <h3>Pluggable Architecture</h3>
+                        <p>Extend functionality with custom plugins and integrations.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-clock"></i></div>
+                        <h3>Auto Expiration</h3>
+                        <p>Efficient data management with automatic expiration.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-lightbulb"></i></div>
+                        <h3>Future: AI Insights</h3>
+                        <p>Coming soon: AI-driven analysis for faster troubleshooting.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="github" class="section alt-section">
+            <div class="container">
+                <h2>Get It On GitHub</h2>
+                <div class="github-container">
+                    <div class="github-info">
+                        <div class="github-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <h3>Open Source Project</h3>
+                        <p>Ze Bleck Bux is available as an open source project. Visit our GitHub repository to explore the code, contribute, or report issues.</p>
+                        <div class="github-buttons">
+                            <a href="https://github.com/scalebit-com/zebleckbux-website.git" class="github-button" target="_blank">
+                                <i class="fab fa-github"></i> Repository
+                            </a>
+                            <a href="https://github.com/scalebit-com/zebleckbux-website/issues" class="github-button" target="_blank">
+                                <i class="fas fa-bug"></i> Report Issues
+                            </a>
+                        </div>
+                    </div>
+                    <div class="github-commands">
+                        <div class="code-block">
+                            <p class="code-title">Clone the repository:</p>
+                            <pre><code>git clone https://github.com/scalebit-com/zebleckbux-website.git</code></pre>
+                            <button class="copy-button" onclick="copyToClipboard('git clone https://github.com/scalebit-com/zebleckbux-website.git')">
+                                <i class="far fa-copy"></i> Copy
+                            </button>
+                            <div class="mobile-notice">Scroll sidleds för att se hela kommandot →</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Ze Bleck Bux - Created by Scalebit</p>
+            <div class="social-links">
+                <a href="https://github.com/scalebit-com/zebleckbux-website.git" target="_blank" class="github-link-large">
+                    <i class="fab fa-github"></i> GitHub Repository
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="scroll-to-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script>
+        // DOM-element för navbar-funktionalitet
+        const header = document.getElementById('header');
+        const hamburgerMenu = document.getElementById('hamburger-menu');
+        const overlay = document.getElementById('overlay');
+        const navLinks = document.querySelectorAll('.nav-link');
+        const scrollBtn = document.getElementById('scrollTop');
+        
+        // Hantera hamburgermenyn
+        hamburgerMenu.addEventListener('click', function() {
+            document.body.classList.toggle('nav-open');
+        });
+        
+        // Stäng menyn när overlay klickas
+        overlay.addEventListener('click', function() {
+            document.body.classList.remove('nav-open');
+        });
+        
+        // Stäng menyn när en nav-länk klickas på mobil
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                document.body.classList.remove('nav-open');
+            });
+        });
+        
+        // Hantera scroll-effekter för headern
+        window.addEventListener('scroll', function() {
+            // För scroll-to-top knappen
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollBtn.style.display = "flex";
+                header.classList.add('scrolled');
+            } else {
+                scrollBtn.style.display = "none";
+                header.classList.remove('scrolled');
+            }
+            
+            // Uppdatera aktiv nav-länk baserat på scrollposition
+            const scrollPosition = window.scrollY;
+            
+            document.querySelectorAll('section[id]').forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                const sectionHeight = section.offsetHeight;
+                const sectionId = section.getAttribute('id');
+                
+                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                    document.querySelectorAll('.nav-link').forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === '#' + sectionId) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        });
+        
+        // Scroll to top funktionalitet
+        scrollBtn.addEventListener('click', function() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        });
+        
+        // Copy to clipboard funktionalitet
+        function copyToClipboard(text) {
+            // För bättre mobilkompatibilitet
+            if (navigator.clipboard) {
+                navigator.clipboard.writeText(text).then(() => {
+                    showCopySuccess();
+                }).catch(err => {
+                    console.error('Could not copy text: ', err);
+                    fallbackCopy(text);
+                });
+            } else {
+                fallbackCopy(text);
+            }
+        }
+        
+        // Fallback-metod för enheter som inte stöder clipboard API
+        function fallbackCopy(text) {
+            const textArea = document.createElement('textarea');
+            textArea.value = text;
+            textArea.style.position = 'fixed';
+            textArea.style.left = '-999999px';
+            document.body.appendChild(textArea);
+            textArea.focus();
+            textArea.select();
+            
+            try {
+                const successful = document.execCommand('copy');
+                if (successful) {
+                    showCopySuccess();
+                }
+            } catch (err) {
+                console.error('Fallback: Could not copy text: ', err);
+            }
+            
+            document.body.removeChild(textArea);
+        }
+        
+        // Visa bekräftelse att kopieringen lyckades
+        function showCopySuccess() {
+            const copyBtn = document.querySelector('.copy-button');
+            const originalText = copyBtn.innerHTML;
+            copyBtn.innerHTML = '<i class="fas fa-check"></i> Copied!';
+            setTimeout(() => {
+                copyBtn.innerHTML = originalText;
+            }, 2000);
+        }
+        
+        // Check if image is loaded and show placeholder if not found
+        document.addEventListener('DOMContentLoaded', function() {
+            const logoLarge = document.getElementById('logo-large');
+            
+            // Markera aktiv nav-länk baserat på aktuell URL-hash
+            const currentHash = window.location.hash;
+            if (currentHash) {
+                document.querySelectorAll('.nav-link').forEach(link => {
+                    if (link.getAttribute('href') === currentHash) {
+                        link.classList.add('active');
+                    }
+                });
+            } else {
+                // Standardmässigt markera den första länken
+                const firstNavLink = document.querySelector('.nav-link');
+                if (firstNavLink) {
+                    firstNavLink.classList.add('active');
+                }
+            }
+            
+            // Sätt automatiskt platshållare för den stora logotypen överst på sidan
+            if (logoLarge) {
+                logoLarge.onerror = function() {
+                    this.onerror = null; // Förhindra oändlig loop
+                    this.src = 'https://via.placeholder.com/350x350/ff7b00/ffffff?text=Ze+Bleck+Bux';
+                    this.alt = 'Ze Bleck Bux Logo Placeholder';
+                    console.log('Stor logo ersatt med platshållare');
+                };
+                
+                // Utlös onerror manuellt om bilden inte finns vid sidladdning
+                setTimeout(function() {
+                    if (logoLarge && (!logoLarge.complete || logoLarge.naturalHeight === 0)) {
+                        logoLarge.src = 'https://via.placeholder.com/350x350/ff7b00/ffffff?text=Ze+Bleck+Bux';
+                    }
+                }, 300);
+            }
+            
+            // Smooth scroll för alla anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        window.scrollTo({
+                            top: target.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>

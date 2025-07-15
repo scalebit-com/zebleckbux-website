@@ -1,0 +1,27 @@
+För att visa logotypen högst upp på din hemsida:
+
+1. Du behöver lägga till en bild med namnet "logo.png" i din projektmapp:
+   c:\Users\linus\Documents\zebleckbux-website-main\logo.png
+
+2. Följande bildformat stöds:
+   - PNG (rekommenderas)
+   - JPG/JPEG
+   - GIF
+   - SVG
+
+3. Rekommenderad storlek:
+   - Minst 280x280 pixlar för bästa resultat på mobil
+   - Kvadratisk eller rund bild rekommenderas (bilden visas i en cirkel)
+   - Transparent bakgrund ger bäst resultat
+
+4. Om du inte har en egen bild:
+   - Du kan ladda ner en platshållarbild från nätet
+   - Döp om den till logo.png
+   - Lägg den i projektmappen
+
+5. Hemsidan är optimerad för att:
+   - Visa logotypen stort högst upp på sidan
+   - Visa en ännu större logotyp på mobiltelefoner (280x280px)
+   - Automatiskt visa en orange platshållare tills du lägger till din egen bild
+
+När du lagt till bilden, uppdatera webbsidan (F5) för att se den visas högst upp på sidan.

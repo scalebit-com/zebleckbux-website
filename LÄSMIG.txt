@@ -1,0 +1,21 @@
+För att fullborda hemsidan:
+
+1. Lägg till din logotyp i projektkatalogen och namnge den "logo.png".
+   - Detta kommer automatiskt ersätta platshållaren på hemsidan.
+   
+2. Om din logotyp har ett annat filnamn eller format:
+   - Uppdatera referenserna i index.html från "logo.png" till ditt faktiska filnamn.
+
+3. Du kan anpassa färger och stilar i style.css:
+   - Akcentfärgen är för närvarande orange (#ff7b00), justera :root variabler efter behov.
+   
+4. För att se hemsidan:
+   - Öppna index.html i en webbläsare.
+
+5. För att koppla till Github:
+   - Kör följande kommando i terminalen:
+     git init
+     git add .
+     git commit -m "Initial commit"
+     git remote add origin https://github.com/scalebit-com/zebleckbux-website.git
+     git push -u origin main (eller master, beroende på standardgren)
